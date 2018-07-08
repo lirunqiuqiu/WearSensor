@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+    <!--<Button-->
+      <!--/>-->
+    <!--<lecho.lib.hellocharts.view.LineChartView-->
+        <!--android:id="@+id/line_chart"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:layout_below="@+id/bt_open_ble"-->
+        <!--android:background="#ffffff"-->
+        <!--android:clickable="true"/>-->
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/bt_open_ble"
+        android:text = "open"
+        android:padding="10dp"
+        android:textColor="@color/colorGreen"
+        app:qmui_borderColor="@color/colorGreen"/>
+    <com.qmuiteam.qmui.alpha.QMUIAlphaTextView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id = "@+id/tv_temp"
+        android:layout_centerHorizontal="true"
+        android:textSize="80dp"
+        android:text="℃"
+        android:textColor="@color/colorGreen"/>
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id = "@+id/lineChart"
+        android:layout_below="@id/tv_temp">
+    </com.github.mikephil.charting.charts.LineChart>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <com.qmuiteam.qmui.widget.QMUITabSegment
+            android:layout_width = "match_parent"
+            android:layout_height="40dp"
+            android:id = "@+id/tab_select"
+            android:textColor="@color/colorGreen"
+            app:qmui_tab_icon_position="top"
+            app:qmui_tab_has_indicator="true"
+            app:qmui_tab_indicator_height="2dp"
+            app:qmui_tab_indicator_top="true"
+            />
+    </FrameLayout>
+
+</RelativeLayout>
