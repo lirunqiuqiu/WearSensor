@@ -179,7 +179,7 @@ public class MainActivity extends Activity {
         });
 
 
-        initLineChart();
+        //initLineChart();
         initLineDataSet(null,ContextCompat.getColor(MainActivity.this,R.color.colorGreen));
 
     }
